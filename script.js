@@ -1,26 +1,26 @@
-const submit = document.getElementById('submit');
-const el = document.getElementById ('text');
-const text  = el.innerText || el.textContent;
-const submm = document.getElementById ('submit2');
+// const submit = document.getElementById('submit');
+// const text = document.getElementById ('text');
+// const something = document.getElementById ('something');
 const whatToDo = document.getElementById ('what-to-do-div');
-let writtenToDoList = 'ggaaaweeweewe';
+// let writtenToDoList = 'ggaaaweeweewe';
+// const demo = document.getElementById ('demo');
+// const inputText = document.getElementById("text").value;
+const textInInput = document.getElementById("text");
 
 
-
-function displaytext (letter) {
+function generateText (){
     const toDoList = document.createElement ("h2");
-    toDoList.innerText = letter;
-    whatToDo.appendChild(toDoList);  
+    toDoList.innerHTML =  document.getElementById("text").value;
+    whatToDo.appendChild(toDoList);
+    // const x = document.getElementById("text");
+    // document.getElementById("demo").innerHTML = x;
+}
 
-}
-function  displayButtons ()  {
-    writtenToDoList.split('').forEach((letter) => {
-        generateButtons(letter)
-    })
-}
+
 
 function addToList (){
-    displayButtons ();
-} 
+    generateText ();
+    textInInput.value= ""
 
-submm.addEventListener('click', addToList);
+} 
+submit.addEventListener('click', addToList);
