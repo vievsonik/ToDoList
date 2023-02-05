@@ -4,20 +4,16 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    /* background-color: brown; */
 }
 .div-box{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     margin-top: 84px;
     gap: 14px;
     background-color: aqua;
-    max-width: 270px;
-    width: 100%;
+    min-width: 270px;
     min-height: 270px;
-    /* min-height: 100%;  */
     border: solid;
     border-radius: 18px;
 }
@@ -29,8 +25,10 @@
 #todo{
     font-size: 2rem;
     font-weight: lighter;
-    transition: all 0.3s ;
+    transition: all 0.1s ;
     cursor: pointer;
+    border-bottom: 3px solid ;
+    margin-bottom: 5px;
     
 }
 #todo:hover{
