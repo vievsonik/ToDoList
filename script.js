@@ -11,6 +11,7 @@ const textInInput = document.getElementById("text");
 function generateText (){
     const toDoList = document.createElement ("h2");
     toDoList.innerHTML =  document.getElementById("text").value;
+    toDoList.id = 'todo';
     whatToDo.appendChild(toDoList);
     // const x = document.getElementById("text");
     // document.getElementById("demo").innerHTML = x;
@@ -20,7 +21,9 @@ function generateText (){
 
 function addToList (){
     generateText ();
-    textInInput.value= ""
+    textInInput.value= "";
+    
+
 
 } 
 submit.addEventListener('click', addToList);

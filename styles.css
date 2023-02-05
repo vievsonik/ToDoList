@@ -2,17 +2,59 @@
     max-width: 1115px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* background-color: brown; */
 }
 .div-box{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     margin-top: 84px;
     gap: 14px;
+    background-color: aqua;
+    max-width: 270px;
+    width: 100%;
+    min-height: 270px;
+    /* min-height: 100%;  */
+    border: solid;
+    border-radius: 18px;
 }
 .h1-class{
     font-size: 2rem;
     font-weight: bolder;
 
+}
+#todo{
+    font-size: 2rem;
+    font-weight: lighter;
+    transition: all 0.3s ;
+    cursor: pointer;
+    
+}
+#todo:hover{
+    font-size: 2.22rem;
+    color: brown;
+}
+.span-class{
+    color:brown;
+}
+#text{
+    height: 33px;
+    border: none;
+    border-radius: 11px;
+    
+}
+#submit{
+  border: none;
+  height: 29px;
+  border-radius: 19px ;
+  background-color: brown;
+  cursor: pointer;
+  transition:all 0.2s;
+}
+#submit:hover{
+    background-color: black;
+    color: white;
 }
