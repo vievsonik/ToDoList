@@ -6,11 +6,10 @@ let writtenToDoList = '';
 
 
 
-function displaytext (userToDoList); {
-    let userToDoList =  writtenToDoList;
+function displaytext () {
     const toDoList = document.createElement ("h2");
-    toDoList.innerText = userToDoList;
-    whatToDo.appendChild(userToDoList);  
+    toDoList.innerText = writtenToDoList;
+    whatToDo.appendChild(writtenToDoList);  
 
 }
 
